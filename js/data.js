@@ -24,6 +24,12 @@ let data = {
       artist: "Hiroyuki Sawano ft. Mika Kobayashi",
       cover: "https://i1.sndcdn.com/artworks-000066623898-2cdhrj-t500x500.jpg",
     },
+    {
+      name: "Akuma No Ko",
+      path: "audio/higuchi-ai-akuma-no-ko.mp3",
+      artist: "Ai Higuchi",
+      cover: "https://i1.sndcdn.com/artworks-hPUTi5Q5WCzkhkZq-BJOJQQ-t500x500.jpg",
+    }
   ],
   backgrounds: [
     "img/397540-wallpaper-attack-on-titan-anime-character-art-4k.jpg",
