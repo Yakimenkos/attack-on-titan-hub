@@ -76,10 +76,22 @@ const setMusic = (i) => {
   disk.style.backgroundImage = `url(${song.cover})`;
 
   currentTime.textContent = "00:00";
-  setTimeout(() => {
-    seekBar.max = music.duration;
-    musicDuration.textContent = formatTime(music.duration);
-  }, 300);
+
+  const getDuration = () => {
+    setTimeout(() => {
+      if(!music.duration) {
+        getDuration()
+        return
+      }
+      seekBar.max = music.duration;
+      musicDuration.textContent = formatTime(music.duration);
+    }, 100)
+  }
+  try {
+    getDuration()
+  } catch(e) {
+    console.error(e)
+  }
 };
 
 const formatTime = (time) => {
