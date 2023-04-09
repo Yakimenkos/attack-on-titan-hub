@@ -152,7 +152,7 @@ body {
   width: 100%;
   background-color: rgba(20, 20, 20, 0.5);
   backdrop-filter: blur(4px);
-  transform: rotate(-90deg) scale(0);
+  transform: rotate(0deg) scale(0);
   display: flex;
   justify-content: center;
   align-items: center;
